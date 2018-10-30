@@ -1,0 +1,73 @@
+
+<div class="container card-body card-title">
+  <div class="row espacamento">
+    
+  <div class="card card-title col-3">19389
+    <p >Total Invoices</p>
+  </div>
+  <div class="card card-title col-3 ">245
+    
+    <p >New Users</p>
+  </div>
+  <div class="card card-title col-3">4829
+    <p>Unique Visits</p>
+  </div>
+  <div class="card card-title col-3">43010
+    <p>Sales</p>
+  </div>
+  </div>
+</div>  
+
+<div class="container card-group">
+  <div class="row espacamento col-12">
+    <div class="card"style="width: 22%">
+      <div class="card-body">
+          <h5 class="card-title">EARNING REPORT</h5>
+          <p class="cart-text">
+              <chart [type]="type"[data]="registrosGrafico" [options]="options"></chart>
+            </p>
+      </div>
+    </div>
+      <div class="card-group espacamento" style="width: 75%">
+        
+          <div class="card ">
+              <div class="card-body">
+                  <h5 class="card-title">PERFORMANCE</h5>
+                    <ul>
+                        <li>Tasks
+                          <a href="">+23870</a>
+                          <p>5,6% change today</p>
+                        </li>
+                        <li>Member Profit  
+                          <a href="">+98376</a>   
+                          <p>3 days ago</p>
+                        </li>
+                        <li>Orders    
+                          <a href="">-390</a>
+                          <p>Wekly Orders</p> 
+                        </li>
+                        <li>Pending 
+                            <a href="">+2452</a>    
+                          <p>Pending tasks</p>
+                        </li>
+                        <li>Revenue    
+                          <a href="">+84278</a> 
+                          <p>5% increases</p>
+                        </li>
+                    </ul>
+              </div>
+          </div>
+            <div class="card">
+              <div class="card-body" >
+                  <h5 class="card-title">YEAR-WISE PERFORMANCE</h5>
+                  <p class="cart-text">Performance of the team is 75%   highter this year
+                    <chart [type]="type2"[data]="registrosGrafico2" [options]="options"></chart>
+                  </p>
+            </div>
+         </div>
+    </div>
+
+  </div>
+  
+
+</div>
