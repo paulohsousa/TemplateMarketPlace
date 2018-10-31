@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
 <div class="row-topo">
   <div class="nav-item">
     <nav class="navbar navbar-light-reverse">
@@ -41,23 +43,47 @@
     </nav>
   </div>
 </div>
+
   <div class="row espacamento d-flex justify-content-center">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+      
     <div class="col d-flex justify-content-center">
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-tv"></i>Dashboard</a>
-          
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-database"></i>Dados</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-phone"></i>Contatos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-bug"></i>Relatórios</a>
-        </li>
+      <ul class="nav btn-group">
+        <button class="btn" type="" data-toggle="modal" data-target="#exampleModal">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-tv"></i>Dashboard</a>
+                
+              </li>
+        </button>
+        
+        <button class="btn" type="" data-toggle="modal" data-target="#exampleModal">
+            <li class="nav-item" type="" data-toggle="modal" data-target="">
+                <a class="nav-link" href="#dadosModal"><i class="fas fa-database"></i>Dados</a>
+             </li>
+        </button>
+        
+        <button class="btn" type="" (click)="toastrChama()" data-toggle="modal" data-target="#contatoModal">
+            <li class="nav-item" >
+                <a class="nav-link" data-toggle="modal" data-target="#myModal">
+                  
+                  <i class="fas fa-phone"></i>Contatos
+                </a>
+              </li>
+        </button>
+        <button class="btn" type="" data-toggle="modal" data-target="#exampleModal">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-bug"></i>Relatórios</a>
+              </li>
+        </button>
+        
       </ul>
     </div>
+    
   </div>
+
+
+<!--<div class="container">
+    <button type="button"  class="btn btn-info btn-lg">
+      Open Modal</button>
+      
+</div>-->

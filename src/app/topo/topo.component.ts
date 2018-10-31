@@ -1,5 +1,6 @@
+import { ContatoComponent } from './../contato/contato.component';
 import { Component, OnInit } from '@angular/core';
-
+import { ToastrService } from 'ngx-toastr';
 @Component({
   selector: 'app-topo',
   templateUrl: './topo.component.html',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopoComponent implements OnInit {
 
-  constructor() { }
-
+  
+ // toastrChama(){
+  //  this.toastr.success(`<app-contato></app-contato>`+ ContatoComponent); 
+    
+ // }
+  
+  constructor(private toastr:ToastrService) { }
+  
   ngOnInit() {
-  }
 
+  }
+  
 }
