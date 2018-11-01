@@ -5,37 +5,89 @@
     <nav class="navbar navbar-light-reverse">
       
       <form class="form-inline">
-        <div class="col"><i class="fas fa-cloud">CloudUI</i></div>
+        <div 
+        class="col">
+        <i class="fas fa-cloud">
+          CloudUI</i>
+        </div>
           
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <input 
+        class="form-control mr-sm-2" 
+        type="search" 
+        placeholder="Search" 
+        aria-label="Search">
        
       </form>
       <!--Botão da seleção de países-->
       <div class="btn-group">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button 
+          type="button" 
+          class="btn btn-secondary dropdown-toggle"
+           data-toggle="dropdown" 
+           aria-haspopup="true" 
+           aria-expanded="true">
             Selecione o País
           </button>
-          <div class="dropdown-menu dropdown-menu-right">
-            <button class="dropdown-item" type="button">Action</button>
-            <button class="dropdown-item" type="button">Another action</button>
-            <button class="dropdown-item" type="button">Something else here</button>
+          <div 
+          class="dropdown-menu dropdown-menu-right">
+            <button 
+            class="dropdown-item" 
+            type="button">
+            Action
+          </button>
+            <button 
+            class="dropdown-item" 
+            type="button">
+            Another action
+          </button>
+            <button 
+            class="dropdown-item" 
+            type="button">
+            Something else here
+          </button>
           </div>
             <div class="container">
-                <a href="#" class="fas fa-envelope icone" role="button" aria-disabled="true"></a>
+                <a href="#"
+                 class="fas fa-envelope icone"
+                  role="button" 
+                  aria-disabled="true">
+                </a>
             </div>
             <div class="container">
-                <a href="#" class="fas fa-bell icone" role="button" aria-disabled="true"></a>
+                <a href="#" 
+                class="fas fa-bell icone" 
+                role="button" 
+                aria-disabled="true">
+              </a>
             </div>
             
             <div class="dropdown">
-                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownMenuButton">
+                <button type="button" 
+                  class="btn btn-secondary dropdown-toggle" 
+                  data-toggle="dropdown" 
+                  aria-haspopup="true" 
+                  aria-expanded="false" 
+                  id="dropdownMenuButton">
                     <img src="" class="rounded">
                     Paulo Sousa
                  </button>
-                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                 <div 
+                 class="dropdown-menu" 
+                 aria-labelledby="dropdownMenuButton">
+                    <a 
+                    class="dropdown-item"
+                     href="#">Action
+                    </a>
+                    <a 
+                    class="dropdown-item" 
+                    href="#">
+                    Another action
+                    </a>
+                    <a 
+                    class="dropdown-item" 
+                    href="#">
+                    Something else here
+                    </a>
                   </div>
                 
               </div>
@@ -44,36 +96,78 @@
   </div>
 </div>
 
-  <div class="row espacamento d-flex justify-content-center">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <div 
+  class="row espacamento d-flex justify-content-center">
+      <link 
+      rel="stylesheet" 
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" 
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" 
+      crossorigin="anonymous">
       
-    <div class="col d-flex justify-content-center">
-      <ul class="nav btn-group">
-        <button class="btn" type="" data-toggle="modal" data-target="#exampleModal">
+    <div 
+    class="col d-flex justify-content-center">
+      <ul 
+      class="nav btn-group">
+        <button
+         class="btn" 
+         type="" 
+         data-toggle="modal" 
+         data-target="#exampleModal">
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-tv"></i>Dashboard</a>
+                <a class="nav-link"
+                 href="#">
+                 <i 
+                 class="fas fa-tv">
+                </i>
+                Dashboard
+              </a>
                 
-              </li>
+            </li>
         </button>
         
-        <button class="btn" type="" data-toggle="modal" data-target="#exampleModal">
-            <li class="nav-item" type="" data-toggle="modal" data-target="">
-                <a class="nav-link" href="#dadosModal"><i class="fas fa-database"></i>Dados</a>
+        <button 
+          class="btn" 
+          type="" 
+          data-toggle="modal" 
+          data-target="#exampleModal">
+            <li class="nav-item" 
+            type="" 
+            data-toggle="modal" 
+            data-target="">
+                <a class="nav-link"
+                 href="#dadosModal">
+                 <i class="fas fa-database">
+                 </i>
+                 Dados
+                </a>
              </li>
         </button>
-        
-        <button class="btn" type="" (click)="toastrChama()" data-toggle="modal" data-target="#contatoModal">
+        <button 
+          class="btn" 
+          type="" 
+          data-toggle="modal"
+          data-target="#contatoModal">
             <li class="nav-item" >
-                <a class="nav-link" data-toggle="modal" data-target="#myModal">
-                  
-                  <i class="fas fa-phone"></i>Contatos
+                <a class="nav-link" 
+                data-toggle="modal" 
+                data-target="#myModal">
+                  <i class="fas fa-phone">
+                  </i>Contatos
                 </a>
-              </li>
+            </li>
         </button>
-        <button class="btn" type="" data-toggle="modal" data-target="#exampleModal">
+        <button 
+          class="btn" 
+          type="" 
+          data-target="#relatorios">
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-bug"></i>Relatórios</a>
-              </li>
+                <a class="nav-link" 
+                href="#relatorios">
+                <i class="fas fa-bug">
+                </i>
+                Relatórios
+              </a>
+            </li>
         </button>
         
       </ul>

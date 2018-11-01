@@ -8,12 +8,14 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ContatoComponent } from './contato/contato.component';
 import { ToastrModule } from "ngx-toastr";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { RelatoriosComponent } from './relatorios/relatorios.component';
 @NgModule({
   declarations: [
     AppComponent,
     TopoComponent,
     DashboardComponent,
-    ContatoComponent
+    ContatoComponent,
+    RelatoriosComponent
   ],
   imports: [
     BrowserModule,
