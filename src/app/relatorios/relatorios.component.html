@@ -1,4 +1,4 @@
-<div class="container" id="relatorios">
+<div class="container" id="1">
   <label for="Tabela Relatórios"><h4>Tabela Relatórios</h4></label>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
      Donec iaculis at risus non ullamcorper. Aliquam eget ligula nulla. 
@@ -10,112 +10,262 @@
 
     </p>
   <div class="col table-responsive">
-    <table class="table">
+    <table  datatable [dtOptions]="dtOptions" class="row-border hover">
       <thead>
         <tr style="font-family: sans-serif">
-          <th scope="col"><b>Profile</b></th>
-          <th scope="col"><b>VatNo.</b></th>
-          <th scope="col"><b>Created</b></th>
-          <th scope="col"><b>Status</b></th>
+          <th>Profile</th>
+          <th>VatNo.</th>
+          <th>Created</th>
+          <th>Status</th>
         </tr>
-        <tr>
-            <td scope="col">Jacob</td>
-            <td scope="col">00000000</td>
-            <td scope="col">12 May 2018</td>
-            <td scope="col">
-              <a href="#" 
-              style="background: red" 
-              class="badge badge-danger">
-              Pending
-            </a>
-            </td>
-          </tr>
+      </thead>
+      <tbody>
           <tr>
-              <td scope="col">Messsy</td>
-              <td scope="col">00000001</td>
-              <td scope="col">15 May 2018</td>
+              <td scope="col">Jacob</td>
+              <td scope="col">00318892</td>
+              <td scope="col">12 May 2018</td>
               <td scope="col">
-                <a href="#" style="background:goldenrod" 
-                class="badge badge-warning">
-                In Progress
+                <a href="#" 
+                style="background: red" 
+                class="badge badge-danger">
+                Pending
               </a>
               </td>
             </tr>
             <tr>
-                <td scope="col">John</td>
-                <td scope="col">14 May 2018</td>
-                <td scope="col">00000012</td>
+                <td scope="col">Messsy</td>
+                <td scope="col">69948219</td>
+                <td scope="col">15 May 2018</td>
                 <td scope="col">
-                <a href="#" 
-                style="background: rebeccapurple" 
-                class="badge badge-primary">
-                Fixed
-              </a>
+                  <a href="#" style="background:goldenrod" 
+                  class="badge badge-warning">
+                  In Progress
+                </a>
                 </td>
               </tr>
               <tr>
-                  <td scope="col">Peter</td>
-                  <td scope="col">16 May 2018</td>
-                  <td scope="col">00000123</td>
+                  <td scope="col">John</td>
+                  <td scope="col">91019275</td>
+                  <td scope="col">14 May 2018</td>
                   <td scope="col">
-                    <a href="#"  
-                    style="background: greenyellow" 
-                    class="badge badge-primary">
-                    Completed
-
-                  </a>
+                  <a href="#" 
+                  style="background: rebeccapurple" 
+                  class="badge badge-primary">
+                  Fixed
+                </a>
                   </td>
                 </tr>
                 <tr>
-                    <td scope="col">Dave</td>
-                    <td scope="col">20 May 2018</td>
-                    <td scope="col">00001234</td>
+                    <td scope="col">Peter</td>
+                    <td scope="col">97992191</td>
+                    <td scope="col">16 May 2018</td>
                     <td scope="col">
-                      <a href="#" 
-                      style="background:goldenrod" 
-                      class="badge badge-warning">
-                      In Progress
+                      <a href="#"  
+                      style="background: greenyellow" 
+                      class="badge badge-primary">
+                      Completed
+  
                     </a>
                     </td>
                   </tr>
-      </thead>
+                  <tr>
+                      <td scope="col">Dave</td>
+                      <td scope="col">37931950</td>
+                      <td scope="col">20 May 2018</td>
+                      <td scope="col">
+                        <a href="#" 
+                        style="background:goldenrod" 
+                        class="badge badge-warning">
+                        In Progress
+                      </a>
+                      </td>
+                    </tr>
+      
+          <tr>
+              <td scope="col">Jeffrey A. Darling</td>
+              <td scope="col">09678615</td>
+              <td scope="col">12 May 2018</td>
+              <td scope="col">
+                <a href="#" 
+                style="background: red" 
+                class="badge badge-danger">
+                Pending
+              </a>
+              </td>
+            </tr>
+            <tr>
+                <td scope="col">Karyn W. Villa</td>
+                <td scope="col">17076830</td>
+                <td scope="col">15 May 2018</td>
+                <td scope="col">
+                  <a href="#" style="background:goldenrod" 
+                  class="badge badge-warning">
+                  In Progress
+                </a>
+                </td>
+              </tr>
+              <tr>
+                  <td scope="col">Deborah C. Helm</td>
+                  <td scope="col">98163822</td>
+                  <td scope="col">14 May 2018</td>
+                  <td scope="col">
+                  <a href="#" 
+                  style="background: rebeccapurple" 
+                  class="badge badge-primary">
+                  Fixed
+                </a>
+                  </td>
+                </tr>
+                <tr>
+                    <td scope="col">William G. Hasson</td>
+                    <td scope="col">61924735</td>
+                    <td scope="col">16 May 2018</td>
+                    <td scope="col">
+                      <a href="#"  
+                      style="background: greenyellow" 
+                      class="badge badge-primary">
+                      Completed
+  
+                    </a>
+                    </td>
+                  </tr>
+                  <tr>
+                      <td scope="col">Constance C. Vick</td>
+                      <td scope="col">15679483</td>
+                      <td scope="col">20 May 2018</td>
+                      <td scope="col">
+                        <a href="#" 
+                        style="background:goldenrod" 
+                        class="badge badge-warning">
+                        In Progress
+                      </a>
+                      </td>
+                    </tr>
+        
+
+          <tr>
+              <td scope="col">Melissa W. Quinn</td>
+              <td scope="col">38808445</td>
+              <td scope="col">12 May 2018</td>
+              <td scope="col">
+                <a href="#" 
+                style="background: red" 
+                class="badge badge-danger">
+                Pending
+              </a>
+              </td>
+            </tr>
+            <tr>
+                <td scope="col">Bessie R. Green</td>
+                <td scope="col">92393891</td>
+                <td scope="col">15 May 2018</td>
+                <td scope="col">
+                  <a href="#" style="background:goldenrod" 
+                  class="badge badge-warning">
+                  In Progress
+                </a>
+                </td>
+              </tr>
+              <tr>
+                  <td scope="col">Regina D. Hastings</td>
+                  <td scope="col">66015598</td>
+                  <td scope="col">14 May 2018</td>
+                  <td scope="col">
+                  <a href="#" 
+                  style="background: rebeccapurple" 
+                  class="badge badge-primary">
+                  Fixed
+                </a>
+                  </td>
+                </tr>
+                <tr>
+                    <td scope="col">Billy J. Schell</td>
+                    <td scope="col">31810929</td>
+                    <td scope="col">16 May 2018</td>
+                    <td scope="col">
+                      <a href="#"  
+                      style="background: greenyellow" 
+                      class="badge badge-primary">
+                      Completed
+  
+                    </a>
+                    </td>
+                  </tr>
+                  <tr>
+                      <td scope="col">Jean W. Myers</td>
+                      <td scope="col">05255006</td>
+                      <td scope="col">20 May 2018</td>
+                      <td scope="col">
+                        <a href="#" 
+                        style="background:goldenrod" 
+                        class="badge badge-warning">
+                        In Progress
+                      </a>
+                      </td>
+                    </tr>
+      
+          <tr>
+              <td scope="col">William M.</td>
+              <td scope="col">27096713</td>
+              <td scope="col">12 May 2018</td>
+              <td scope="col">
+                <a href="#" 
+                style="background: red" 
+                class="badge badge-danger">
+                Pending
+              </a>
+              </td>
+            </tr>
+            <tr>
+                <td scope="col">Brenda G. Kirkland</td>
+                <td scope="col">00000001</td>
+                <td scope="col">15 May 2018</td>
+                <td scope="col">
+                  <a href="#" style="background:goldenrod" 
+                  class="badge badge-warning">
+                  In Progress
+                </a>
+                </td>
+              </tr>
+              <tr>
+                  <td scope="col">Jill H. Hinz</td>
+                  <td scope="col">00000012</td>
+                  <td scope="col">14 May 2018</td>
+                  <td scope="col">
+                  <a href="#" 
+                  style="background: rebeccapurple" 
+                  class="badge badge-primary">
+                  Fixed
+                </a>
+                  </td>
+                </tr>
+                <tr>
+                    <td scope="col">Jake J. Butler</td>
+                    <td scope="col">00000123</td>
+                    <td scope="col">16 May 2018</td>
+                    <td scope="col">
+                      <a href="#"  
+                      style="background: greenyellow" 
+                      class="badge badge-primary">
+                      Completed
+  
+                    </a>
+                    </td>
+                  </tr>
+                  <tr>
+                      <td scope="col">Jimmy Y. Steffen</td>
+                      <td scope="col">00001234</td>
+                      <td scope="col">10 May 2018</td>
+                      <td scope="col">
+                        <a href="#" 
+                        style="background:goldenrod" 
+                        class="badge badge-warning">
+                        In Progress
+                      </a>
+                      </td>
+                    </tr>
+      </tbody>
     </table>
-    <footer class="container row">
-       <div 
-       class="d-flex justify-content-start">
-       <label 
-       for="Total:">
-       Total:
-      </label>
-       </div> 
-        <div 
-        class="p-2 flex-fill bd-highlight">
-        <p>12345 Results</p>
-          </div>
-          <div class="p-2 flex-fill bd-highlight">
-              <nav aria-label="Page navigation example">
-                  <ul class="pagination">
-                    <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                        <span class="sr-only">Previous</span>
-                      </a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                        <span class="sr-only">Next</span>
-                      </a>
-                    </li>
-                  </ul>
-             </nav>
-          
-          </div>
-         
-    </footer>
     
   </div>
 </div>

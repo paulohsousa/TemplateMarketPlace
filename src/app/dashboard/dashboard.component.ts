@@ -11,6 +11,23 @@ export class DashboardComponent implements OnInit {
     responsive:true,
     maintainAspectRatio:false
   };
+  //public corAle(){
+  //  var hexadecimais : [ '0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'];
+  //  var cor :'#';
+  //  for(var i=0;i<6; i++) {
+  //    cor+=hexadecimais [Math.floor(Math.random()*16)];
+  //  
+  //  }
+  //  return  cor;
+  //}
+  public corAle() {
+    var r = Math.floor(Math.random() * 255);
+    var g = Math.floor(Math.random() * 255);
+    var b = Math.floor(Math.random() * 255);
+    return "rgb(" + r + "," + g + "," + b + ")";
+  };
+
+
   type = "doughnut";
   registrosGrafico = {
     //Título do gráfico
@@ -24,8 +41,10 @@ export class DashboardComponent implements OnInit {
         label:'vendas',
         data:[50,15,10],
         backgroundColor:[
-          '#F00','#0F0','#00F'
-
+         // '#F00','#0F0','#00F',
+         this.corAle(),
+         this.corAle(),
+         this.corAle()
         ]
       }
     ]
@@ -47,27 +66,16 @@ export class DashboardComponent implements OnInit {
         label:'Tasks',
         data:[50,15,10,45,21,76,34],
         backgroundColor:[
-          '#F00',
-          '#F00',
-          '#F00',
-          '#F00',
-          '#F00',
-          '#F00',
-          '#F00'
-
+         
+          this.corAle(),
         ]
       },
       {
         label:'Member Profit',
         data:[52,134,140,345,121,716,344],
         backgroundColor:[
-          '#0F0',
-          '#0F0',
-          '#0F0',
-          '#0F0',
-          '#0F0',
-          '#0F0',
-          '#0F0'
+          
+          this.corAle(),
 
         ]
       },
@@ -75,13 +83,7 @@ export class DashboardComponent implements OnInit {
         label:'Orders',
         data:[43,1434,440,98,540,431,644],
         backgroundColor:[
-          '#00F',
-          '#00F',
-          '#00F',
-          '#00F',
-          '#00F',
-          '#00F',
-          '#00F'
+          this.corAle()
 
         ]
       },
@@ -89,13 +91,7 @@ export class DashboardComponent implements OnInit {
         label:'Pending',
         data:[454,43,654,968,565,453,339],
         backgroundColor:[
-          '#1E90FF',
-          '#1E90FF',
-          '#1E90FF',
-          '#1E90FF',
-          '#1E90FF',
-          '#1E90FF',
-          '#1E90FF'
+          this.corAle(),
 
         ]
       },
@@ -103,20 +99,16 @@ export class DashboardComponent implements OnInit {
         label:'Revenue',
         data:[1245,343,643,968,553,37,234],
         backgroundColor:[
-          '#FFD700',
-          '#FFD700',
-          '#FFD700',
-          '#FFD700',
-          '#FFD700',
-          '#FFD700',
-          '#FFD700'
+          this.corAle(),
 
         ]
       }
     ]
   };
-
-  constructor() { }
+ 
+  constructor() { 
+    
+  }
 
   ngOnInit() {
   }
@@ -124,3 +116,4 @@ export class DashboardComponent implements OnInit {
   
 
 }
+

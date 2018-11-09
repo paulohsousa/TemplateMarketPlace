@@ -6,12 +6,13 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./contato.component.sass']
 })
 export class ContatoComponent implements OnInit {
-  
+
   constructor() { }
   ngOnInit() {
     
+
   }  
-  
+    
   
 
 }
