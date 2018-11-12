@@ -1,20 +1,24 @@
 import { ContatoComponent } from './../contato/contato.component';
 import { Component, OnInit } from '@angular/core';
-import { ToastrService } from 'ngx-toastr';
+import { DataserviceService } from './pais/dataservice.service';
+import { Pais } from './pais/pais';
+
 @Component({
   selector: 'app-topo',
   templateUrl: './topo.component.html',
-  styleUrls: ['./topo.component.sass']
+  styleUrls: ['./topo.component.sass'],
+  providers:[DataserviceService]
 })
 export class TopoComponent implements OnInit {
 
+  paises:Pais [];
   
- // toastrChama(){
-  //  this.toastr.success(`<app-contato></app-contato>`+ ContatoComponent); 
-    
- // }
-  
-  constructor(private toastr:ToastrService) { }
+  constructor(
+    private dataService:DataserviceService
+  )
+   {
+     this.paises = this.dataService.obterPaises();
+    }
   
   ngOnInit() {
 

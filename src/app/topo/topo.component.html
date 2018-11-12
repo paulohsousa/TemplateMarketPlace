@@ -20,78 +20,84 @@
       </form>
       <!--Botão da seleção de países-->
       <div class="btn-group">
-          <button 
-          type="button" 
-          class="btn btn-secondary dropdown-toggle"
-           data-toggle="dropdown" 
-           aria-haspopup="true" 
-           aria-expanded="true">
-            Selecione o País
-          </button>
-          <div 
-          class="dropdown-menu dropdown-menu-right">
+        <div class="btn-group" >
+          
             <button 
-            class="dropdown-item" 
-            type="button">
-            Action
-          </button>
-            <button 
-            class="dropdown-item" 
-            type="button">
-            Another action
-          </button>
-            <button 
-            class="dropdown-item" 
-            type="button">
-            Something else here
-          </button>
-          </div>
-            <div class="container">
-                <a href="#"
-                 class="fas fa-envelope icone"
+            type="button" 
+            class="btn btn-secondary dropdown-toggle"
+             data-toggle="dropdown" 
+             aria-haspopup="true" 
+             aria-expanded="true"
+             >
+              Selecione o País
+              
+            </button>
+            <div 
+            class="dropdown-menu dropdown-menu-right pais">
+              <button 
+              *ngFor="let pais of paises" 
+              value={{pais.id}}
+              class="dropdown-item" 
+              type="button"
+              >
+              {{pais.nome}}
+              </button>
+            </div>
+        </div>
+          <!--Buttons ícones(bell mail) -->
+            <div class="btn-group">
+              <div class="container" >
+                
+                  <a href="#"
+                   class="fas fa-envelope icone"
+                    role="button" 
+                    aria-disabled="true">
+                  </a>
+              </div>
+              <div class="container">
+                  <a href="#" 
+                  class="fas fa-bell icone" 
                   role="button" 
                   aria-disabled="true">
                 </a>
+              </div>
+
             </div>
-            <div class="container">
-                <a href="#" 
-                class="fas fa-bell icone" 
-                role="button" 
-                aria-disabled="true">
-              </a>
+            <!--Button perfil-->
+              <div class="btn-group perfil">
+                <div class="dropdown">
+                    <button type="button" 
+                      class="btn btn-secondary dropdown-toggle" 
+                      data-toggle="dropdown" 
+                      aria-haspopup="true" 
+                      aria-expanded="false" 
+                      id="dropdownMenuButton">
+                        <img src="" class="rounded fa fa-user">
+                        Paulo Sousa
+                     </button>
+                     <div 
+                     class="dropdown-menu perfil" 
+                     aria-labelledby="dropdownMenuButton">
+                        <a 
+                        class="dropdown-item"
+                         href="#" role="menuitem">
+                         <strong>
+                            Paulo henrique Sousa
+                         </strong>
+                        </a>
+                  
+                      <li class="dropdown-divider"></li>
+                      <a class="dropdown-item" role="menuitem" href=""> Perfil</a>
+                      <a class="dropdown-item" role="menuitem" href="">Configurações</a>
+                      <li class="dropdown-divider"></li>
+                      <a class="dropdown-item" role="menuitem" href="">Sair</a>
+                      </div>
+                    
+                  </div> 
             </div>
             
-            <div class="dropdown">
-                <button type="button" 
-                  class="btn btn-secondary dropdown-toggle" 
-                  data-toggle="dropdown" 
-                  aria-haspopup="true" 
-                  aria-expanded="false" 
-                  id="dropdownMenuButton">
-                    <img src="" class="rounded">
-                    Paulo Sousa
-                 </button>
-                 <div 
-                 class="dropdown-menu" 
-                 aria-labelledby="dropdownMenuButton">
-                    <a 
-                    class="dropdown-item"
-                     href="#">Action
-                    </a>
-                    <a 
-                    class="dropdown-item" 
-                    href="#">
-                    Another action
-                    </a>
-                    <a 
-                    class="dropdown-item" 
-                    href="#">
-                    Something else here
-                    </a>
-                  </div>
-                
-              </div>
         </div>
+        
     </nav>
   </div>
 </div>
