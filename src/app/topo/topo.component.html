@@ -20,7 +20,7 @@
       </form>
       <!--Botão da seleção de países-->
       <div class="btn-group">
-        <div class="btn-group" >
+        <div class="btn-group">
           
             <button 
             type="button" 
@@ -28,20 +28,30 @@
              data-toggle="dropdown" 
              aria-haspopup="true" 
              aria-expanded="true"
+             
              >
-              Selecione o País
+
+             Selecione o País 
               
             </button>
             <div 
-            class="dropdown-menu dropdown-menu-right pais">
+            class="dropdown-menu dropdown-menu-right pais" 
+            [(ngModel)]="paisSelecionado.id" 
+            (change)="onSelect($event.target.value)" 
+            id="sel1" ngDefaultControl>
               <button 
-              *ngFor="let pais of paises" 
-              value={{pais.id}}
-              class="dropdown-item" 
-              type="button"
+                *ngFor="let pais of paises" 
+                value={{pais.id}}
+                class="dropdown-item" 
+                type="button"
+              
               >
-              {{pais.nome}}
+                {{pais.nome}}
               </button>
+              <div *ngIf='paisSelecionado.id == 0' value="0">
+                    
+                 </div>  
+                
             </div>
         </div>
           <!--Buttons ícones(bell mail) -->

@@ -10,7 +10,7 @@ import { Pais } from './pais/pais';
   providers:[DataserviceService]
 })
 export class TopoComponent implements OnInit {
-
+  paisSelecionado : Pais = new Pais(1,'','','') ;
   paises:Pais [];
   
   constructor(
@@ -19,6 +19,11 @@ export class TopoComponent implements OnInit {
    {
      this.paises = this.dataService.obterPaises();
     }
+    onSelect(id) {
+      this.paises = this.dataService.obterPaises().filter((item)=> item == id);
+      return this.paisSelecionado
+    }
+  
   
   ngOnInit() {
 

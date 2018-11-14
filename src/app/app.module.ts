@@ -1,3 +1,4 @@
+import {FormsModule} from '@angular/forms';
 import { AppRoutes } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
@@ -26,6 +27,7 @@ import {PaginacaoService} from './relatorios/paginacao.service';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     ChartModule,
     DataTablesModule,
     BrowserAnimationsModule,
